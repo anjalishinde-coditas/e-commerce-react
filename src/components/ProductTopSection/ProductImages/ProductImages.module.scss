@@ -1,0 +1,55 @@
+
+
+.product-image-container {
+  width: 100%;
+
+  .product-image-background {
+    height: 810px;
+    width: inherit;
+    background: var(--background);
+    border-radius: 50%;
+    position: relative;
+    bottom: 109px;
+    right: -32%;
+
+    .angular-img {
+      height: 150px;
+      width: 150px;
+      position: absolute;
+      top: 35%;
+      right: 50%;
+    }
+
+    .net-img {
+      height: 150px;
+      width: 150px;
+      position: absolute;
+      top: 65%;
+      right: 37%;
+    }
+
+    .vite-img {
+      height: 100px;
+      width: 100px;
+      position: absolute;
+      top: 80%;
+      right: 70%;
+    }
+
+    .javascript-img {
+      height: 150px;
+      width: 150px;
+      position: absolute;
+      top: 57%;
+      right: 87%;
+    }
+
+    .laravel-img {
+      height: 100px;
+      width: 100px;
+      position: absolute;
+      top: 35%;
+      right: 92%;
+    }
+  }
+}

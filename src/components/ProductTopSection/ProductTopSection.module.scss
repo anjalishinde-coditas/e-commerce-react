@@ -1,0 +1,23 @@
+.main-section {
+  .header {
+    padding-top: 40px;
+    position: absolute;
+    width: -webkit-fill-available;
+    right: 135px;
+    left: 135px;
+    z-index: 9999;
+  }
+
+  .image-content-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .content-wrapper {
+      padding-top: 135px;
+    }
+
+    .image-wrapper {
+    }
+  }
+}

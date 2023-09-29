@@ -1,0 +1,14 @@
+.btn-wrapper {
+  display: flex;
+  align-items: center;
+  background: var(--background);
+  border-radius: 5px;
+  height: 50px;
+
+  .btn-text {
+    font-family: var(--hd-fnt-fm);
+    font-size: var(--hd-fnt-sz-4);
+    font-weight: var(--bd-fnt-wt-lg);
+    line-height: var(--bd-fnt-ln-hgt-1);
+  }
+}

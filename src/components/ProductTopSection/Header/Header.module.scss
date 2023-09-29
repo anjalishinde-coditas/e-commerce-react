@@ -1,0 +1,9 @@
+.header-wrapper {
+  height: 100px;
+  background-color: var(--white);
+  box-shadow: 0px 1px 10px 0px var(--shadow);
+
+  .header-content {
+    padding: 25px 30px;
+  }
+}
