@@ -1,8 +1,8 @@
 import styles from "./Button.module.scss";
 import { ButtonProps } from "./Button.types.ts";
 
-const Button = ({ path, text }: ButtonProps) => {
-  return (
+const Button = ({ path, text, notifications }: ButtonProps) => {
+  return !notifications ? (
     <div>
       <button className={styles["btn-wrapper"]}>
         {path && (
@@ -10,9 +10,24 @@ const Button = ({ path, text }: ButtonProps) => {
             <img src={path} alt="button-icon"></img>
           </div>
         )}
-        <div className={styles["btn-text"]}>
-          <span>{text}</span>
-        </div>
+        {text && (
+          <div className={styles["btn-text"]}>
+            <span>{text}</span>
+          </div>
+        )}
+      </button>
+    </div>
+  ) : (
+    <div className={styles["notification-img-container"]}>
+      <button className={styles["notification-wrapper"]}>
+        {path && (
+          <div className={styles["notification-img"]}>
+            <img src={path} alt="button-icon"></img>
+          </div>
+        )}
+        {notifications && (
+          <div className={styles["notification-count"]}>{notifications}</div>
+        )}
       </button>
     </div>
   );

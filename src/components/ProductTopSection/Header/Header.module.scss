@@ -5,5 +5,20 @@
 
   .header-content {
     padding: 25px 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    .categories-btn {
+      width: 271px;
+    }
+
+    .wishlist-btn {
+      width: 50px;
+    }
+
+    .cart-btn {
+      width: 50px;
+    }
   }
 }
