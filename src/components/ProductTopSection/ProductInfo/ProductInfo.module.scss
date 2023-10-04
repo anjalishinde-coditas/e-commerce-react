@@ -1,1 +1,22 @@
- 
+.content-wrapper {
+  .heading {
+    font-size: 48px;
+    font-weight: 700;
+    padding-bottom: 18px;
+
+    .heading-color {
+      color: unset;
+      background-image: var(--background);
+      background-clip: text;
+      -webkit-background-clip: text; /* For WebKit browsers */
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  .content {
+    font-size: var(--hd-fnt-sz-4);
+    font-weight: var(--bd-fnt-wt-lg);
+    padding-bottom: 30px;
+  }
+}

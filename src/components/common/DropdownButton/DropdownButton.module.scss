@@ -1,0 +1,24 @@
+.drop-down-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--background);
+  border-radius: 5px;
+  height: 50px;
+  border: unset;
+  width: 100%;
+  color: var(--white);
+
+  .btn-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    .btn-text {
+      font-family: var(--hd-fnt-fm);
+      font-size: var(--hd-fnt-sz-4);
+      font-weight: var(--bd-fnt-wt-lg);
+      line-height: var(--bd-fnt-ln-hgt-1);
+    }
+  }
+}

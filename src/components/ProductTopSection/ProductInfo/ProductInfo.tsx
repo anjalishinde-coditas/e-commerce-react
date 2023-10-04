@@ -3,9 +3,14 @@ import { ProductInfoProps } from "./ProductInfo.types.ts";
 
 const ProductInfo = ({}: ProductInfoProps) => {
   return (
-    <div>
-      <h1>World Top Themes, Plugins & Templates</h1>
-      <span>
+    <div className={styles["content-wrapper"]}>
+      <div className={styles["heading"]}>
+        <span className={styles["heading"]}>World Top</span>
+        <span className={styles["heading-color"]}>
+          Themes, Plugins & Templates
+        </span>
+      </div>
+      <span className={styles["content"]}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisi
         ultricies habitant eget volutpat ut aenean in dolor. Praesent mi velit
         in id hac platea leo vulputate.

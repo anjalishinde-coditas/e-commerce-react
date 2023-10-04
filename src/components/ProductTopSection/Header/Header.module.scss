@@ -6,19 +6,40 @@
   .header-content {
     padding: 25px 30px;
     display: flex;
-    flex-direction: row;
-    gap: 10px;
+    justify-content: space-between;
 
-    .categories-btn {
-      width: 271px;
+    .left-section {
+      display: flex;
+      gap: 36px;
+
+      .main-heading-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        .main-heading {
+          font-size: var(--hd-fnt-sz-3);
+          font-weight: var(--bd-fnt-wt-rg);
+        }
+      }
+
+      .categories-btn {
+        width: 271px;
+      }
     }
 
-    .wishlist-btn {
-      width: 50px;
-    }
+    .right-section {
+      display: flex;
+      gap: 25px;
+      justify-content: flex-end;
 
-    .cart-btn {
-      width: 50px;
+      .wishlist-btn {
+        width: 50px;
+      }
+
+      .cart-btn {
+        width: 50px;
+      }
     }
   }
 }
