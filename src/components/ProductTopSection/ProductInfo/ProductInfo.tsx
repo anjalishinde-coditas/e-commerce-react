@@ -5,7 +5,7 @@ const ProductInfo = ({}: ProductInfoProps) => {
   return (
     <div className={styles["content-wrapper"]}>
       <div className={styles["heading"]}>
-        <span className={styles["heading"]}>World Top</span>
+        <span className={styles["heading"]}>World Top </span>
         <span className={styles["heading-color"]}>
           Themes, Plugins & Templates
         </span>

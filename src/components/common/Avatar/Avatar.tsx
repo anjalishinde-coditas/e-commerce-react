@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import styles from "./Avatar.module.scss";
 import { AvatarProps } from "./Avatar.types.ts";
 
-const Avatar = ({ path, text }: AvatarProps) => {
+const Avatar = ({ path, text, active = false }: AvatarProps) => {
   function getAbbreviation(name: string) {
     const words = name.split(/(?=[A-Z])/) || name.split(" ");
     let abbreviation = "";
@@ -21,8 +21,12 @@ const Avatar = ({ path, text }: AvatarProps) => {
   return (
     <div>
       {path ? (
-        <div className="avatar-img">
-          <img src={path}></img>
+        <div
+          className={`${styles["avatar-img"]} ${active && styles["active"]} ${
+            !active && styles["not-active"]
+          }`}
+        >
+          <img className={styles["img"]} src={path}></img>
         </div>
       ) : (
         <div className={styles["avatar-text"]}>

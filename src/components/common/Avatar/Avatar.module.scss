@@ -13,3 +13,25 @@
     color: var(--white);
   }
 }
+
+.avatar-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+
+  .img {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+.active {
+  background-color: var(--white);
+}
+
+.not-active {
+  background: var(--background);
+}
